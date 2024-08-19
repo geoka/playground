@@ -2,3 +2,9 @@ pandas
 streamlit
 altair
 matplotlib
+sqlalchemy
+pybigquery
+langchain_community
+langchain-google-community[bigquery]
+langchain-google-vertexai
+langchain_openai
