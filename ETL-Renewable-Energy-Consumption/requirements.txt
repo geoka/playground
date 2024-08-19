@@ -8,3 +8,4 @@ langchain_community
 langchain-google-community[bigquery]
 langchain-google-vertexai
 langchain_openai
+google-cloud-bigquery-storage
