@@ -9,8 +9,8 @@ from langchain.chains import create_sql_query_chain
 from sqlalchemy import create_engine
 from sqlalchemy.pool import StaticPool
 
-load_dotenv()
-google_api_key = os.environ['GOOGLE_API_KEY']
+# load_dotenv()
+# google_api_key = os.environ['GOOGLE_API_KEY']
 # print(os.environ["OPENAI_API_KEY"])
 # os.environ["OPENAI_API_KEY"] = getpass.getpass()
 
