@@ -8,9 +8,12 @@ from langchain_google_vertexai import ChatVertexAI
 from langchain.chains import create_sql_query_chain
 from sqlalchemy import create_engine
 from sqlalchemy.pool import StaticPool
+from langchain_community.tools.sql_database.tool import QuerySQLDataBaseTool
+from prompt_prep import define_prompt
 
-load_dotenv()
-google_api_key = os.environ['GOOGLE_API_KEY']
+
+# load_dotenv()
+# google_api_key = os.environ['GOOGLE_API_KEY']
 # print(os.environ["OPENAI_API_KEY"])
 # os.environ["OPENAI_API_KEY"] = getpass.getpass()
 
@@ -39,6 +42,31 @@ db = SQLDatabase(engine)
 
 llm = ChatVertexAI(model="gemini-1.5-flash")
 
-chain = create_sql_query_chain(llm, db)
-response = chain.invoke({"question": "How many employees are there"})
-print(response)
+execute_query = QuerySQLDataBaseTool(db=db)
+
+# prompt
+QUESTION = 'How many employees are there'
+TABLE_INFO = 'Employee'
+DIALECT = 'SQLlite'
+TOP_K = "10"
+prompt_template = define_prompt()
+# print(prompt)
+
+write_query = create_sql_query_chain(llm, db, prompt_template)
+
+# chain = write_query
+chain = write_query | execute_query
+chain.get_prompts()[0].pretty_print()
+
+response = chain.invoke({"question": QUESTION, "top_k": TOP_K})
+
+print("response:",response)
+
+# Then answer the question
+# https://python.langchain.com/v0.2/docs/tutorials/sql_qa/#answer-the-question
+
+# chain = create_sql_query_chain(llm, db)
+# chain.get_prompts()[0].pretty_print()
+# response = chain.invoke({"question": "How many employees are there"})
+# print(response)
+# db.run(response)
