@@ -1,15 +1,18 @@
 import getpass
 import os
 import sqlite3
+from dotenv import load_dotenv
 import requests
 from langchain_community.utilities.sql_database import SQLDatabase
-from langchain_openai import ChatOpenAI
+from langchain_google_vertexai import ChatVertexAI
+from langchain.chains import create_sql_query_chain
 from sqlalchemy import create_engine
 from sqlalchemy.pool import StaticPool
-from langchain.chains import create_sql_query_chain
 
+load_dotenv()
+google_api_key = os.environ['GOOGLE_API_KEY']
 # print(os.environ["OPENAI_API_KEY"])
-os.environ["OPENAI_API_KEY"] = getpass.getpass()
+# os.environ["OPENAI_API_KEY"] = getpass.getpass()
 
 def get_engine_for_chinook_db():
     """Pull sql file, populate in-memory database, and create engine."""
@@ -26,7 +29,6 @@ def get_engine_for_chinook_db():
         connect_args={"check_same_thread": False},
     )
 
-
 engine = get_engine_for_chinook_db()
 
 db = SQLDatabase(engine)
@@ -35,8 +37,8 @@ db = SQLDatabase(engine)
 # print(db.get_usable_table_names())
 # db.run("SELECT * FROM Artist LIMIT 10;")
 
-llm = ChatOpenAI(model="gpt-4o-mini")
+llm = ChatVertexAI(model="gemini-1.5-flash")
 
 chain = create_sql_query_chain(llm, db)
 response = chain.invoke({"question": "How many employees are there"})
-response
+print(response)
