@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 
-from generate_execute_query import write_query,execute_query,llm
+from scripts.openai.generate_query import write_query,execute_query,llm
 
 answer_prompt = PromptTemplate.from_template(
     """Given the following user question, corresponding SQL query, and SQL result, answer the user question.
@@ -24,5 +24,5 @@ chain = (
     | StrOutputParser()
 )
 
-answer = chain.invoke({"question": "How many employees are there"})
+answer = chain.invoke({"question": "How many entities are there"})
 print(answer)
