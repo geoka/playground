@@ -7,6 +7,7 @@ pybigquery
 langchain_community
 langchain-google-community[bigquery]
 langchain-google-vertexai
-langchain_openai
+langchain-openai
 google-cloud-bigquery-storage
 python-dotenv
+openai
