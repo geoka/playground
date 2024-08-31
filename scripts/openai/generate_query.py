@@ -11,7 +11,7 @@ from langchain_community.tools.sql_database.tool import QuerySQLDataBaseTool
 from prompt_question import define_prompt
 # Add the directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../utils')))
-from get_engine import get_engine_for_chinook_db,get_engine_for_energy_data
+from get_engine import *
 
 
 load_dotenv()
@@ -29,8 +29,8 @@ db = SQLDatabase(engine)
 # print(db.get_usable_table_names())
 # db.run("SELECT * FROM Artist LIMIT 10;")
 
-llm = ChatOpenAI(model="gpt-4") # responses differ per model e.g. 4o or 4o-mini respond with text + SQL and the SQL query fails on the Database
-
+# responses differ per model e.g. 4o or 4o-mini respond with text + SQL and the SQL query fails on the Database
+llm = ChatOpenAI(model="gpt-4")
 
 # Design prompt
 prompt_template = define_prompt()

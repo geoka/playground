@@ -1,7 +1,7 @@
-import requests
 import sqlite3
+import requests
 import pandas as pd
-from sqlalchemy import create_engine,inspect
+from sqlalchemy import create_engine
 from sqlalchemy.pool import StaticPool,SingletonThreadPool
 
 
@@ -92,16 +92,16 @@ def get_engine_for_energy_data():
     disk_conn = sqlite3.connect(db_file) # works OK
     # cursor = disk_conn.cursor()
     # print("Database created and Successfully Connected to SQLite")
-   
+
     # Create an in-memory database
     # memory_conn = sqlite3.connect(':memory:')
-    
+  
     # Attach the disk-based database to the in-memory database
     # disk_conn.backup(memory_conn)
-    
+
     # Close the connection to the disk-based database
     # disk_conn.close()
-    
+
     print("Loaded energy.db into memory.")
 
     engine = create_engine(
@@ -117,7 +117,7 @@ def get_engine_for_energy_data():
 
     # tables = inspector.get_table_names()
     # print(tables)
-    
+
     return engine
 
 
