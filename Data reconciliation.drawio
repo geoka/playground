@@ -4,8 +4,15 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="379.66" y="243.34" width="380.34" height="100" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-29" target="fsNMHJ3vaEJQy9d12kHY-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-29" value="DBT model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="379.66" y="60" width="380.34" height="220" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Data reconciliation&amp;nbsp;&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="10" y="10" width="420" height="120" as="geometry" />
@@ -14,7 +21,7 @@
           <mxGeometry x="150" y="510" width="500" height="20" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-12" value="BigQuery table" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="30" y="250" width="60" height="80" as="geometry" />
+          <mxGeometry x="30" y="186.66" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.073;entryY=0.518;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-11" target="fsNMHJ3vaEJQy9d12kHY-12">
           <mxGeometry relative="1" as="geometry" />
@@ -22,20 +29,22 @@
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-17" target="fsNMHJ3vaEJQy9d12kHY-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="379.66" y="60" width="380.34" height="100" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="fsNMHJ3vaEJQy9d12kHY-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="110" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-15" value="Backfill job&lt;div&gt;(data_source = &quot;model&quot;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="400" y="273.33000000000004" width="139.33" height="48.89" as="geometry" />
+          <mxGeometry x="400" y="209.99000000000004" width="139.33" height="48.89" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-17" value="Regular incremental job&amp;nbsp;&lt;div&gt;(data_source = &quot;source&quot;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="390" y="76.66999999999999" width="137.93" height="53.33" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-11" value="Job to identify backfilled records at source" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="138.78285714285715" y="266.6711111111111" width="115.13142857142859" height="53.33333333333333" as="geometry" />
+          <mxGeometry x="138.78285714285715" y="203.33111111111108" width="115.13142857142859" height="53.33333333333333" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-7" value="table with records to merge" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="292.2914285714286" y="262.22222222222223" width="57.56571428571429" height="71.11111111111111" as="geometry" />
+          <mxGeometry x="292.2914285714286" y="198.88222222222223" width="57.56571428571429" height="71.11111111111111" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.568;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-11" target="fsNMHJ3vaEJQy9d12kHY-7">
           <mxGeometry relative="1" as="geometry" />
@@ -44,10 +53,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-27" value="insert overwrite job&lt;div&gt;partitioning filter last 24 hours&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="560" y="76.66999999999999" width="137.93" height="53.33" as="geometry" />
+          <mxGeometry x="560" y="76.67" width="170" height="53.33" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-28" value="merge job&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;with custom partitioning filter&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="590" y="273.33000000000004" width="139.33" height="48.89" as="geometry" />
+          <mxGeometry x="570" y="209.98999999999998" width="159.33" height="48.89" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-30" value="BigQuery table" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="140" width="60" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
