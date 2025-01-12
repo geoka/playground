@@ -1,9 +1,24 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="Page-1" id="UgffWW_VsuH77YorsNkY">
-    <mxGraphModel>
+    <mxGraphModel dx="830" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-1" value="source table" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Data reconciliation&amp;nbsp;&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-3" value="table with records to merge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-5" value="flag" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-6" value="DBT model" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
