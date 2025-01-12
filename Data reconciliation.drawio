@@ -7,15 +7,13 @@
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-46" value="DBT model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="124.21000000000001" y="179.44" width="150" height="109.99" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-29" target="fsNMHJ3vaEJQy9d12kHY-30">
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.984;exitY=0.591;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-28" target="fsNMHJ3vaEJQy9d12kHY-30">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="727" y="240" />
               <mxPoint x="830" y="240" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-29" value="DBT model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="379.66" y="60" width="380.34" height="220" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Data reconciliation&amp;nbsp;&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="10" y="10" width="420" height="120" as="geometry" />
@@ -32,7 +30,7 @@
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-17" target="fsNMHJ3vaEJQy9d12kHY-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="fsNMHJ3vaEJQy9d12kHY-30">
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-27" target="fsNMHJ3vaEJQy9d12kHY-30">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="760" y="110" as="sourcePoint" />
           </mxGeometry>
@@ -40,8 +38,11 @@
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-15" value="Backfill job&lt;div&gt;(data_source = &quot;model&quot;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="400" y="209.99000000000004" width="139.33" height="48.89" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-17" value="Regular incremental job&amp;nbsp;&lt;div&gt;(data_source = &quot;source&quot;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="390" y="76.66999999999999" width="137.93" height="53.33" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-17" target="fsNMHJ3vaEJQy9d12kHY-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-17" value="Regular incremental job&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;div&gt;(data_source = &quot;source&quot;)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="200" y="76.66999999999999" width="137.93" height="53.33" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-11" target="fsNMHJ3vaEJQy9d12kHY-7">
           <mxGeometry relative="1" as="geometry" />
@@ -49,7 +50,7 @@
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-11" value="Job to identify backfilled records at source" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="138.41" y="203.33" width="121.59" height="53.33" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-7" value="table with records to merge" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-7" value="table with records to merge" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="292.2914285714286" y="198.88222222222223" width="57.56571428571429" height="71.11111111111111" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-15" target="fsNMHJ3vaEJQy9d12kHY-7">
@@ -65,7 +66,7 @@
           <mxGeometry x="800" y="140" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-33" value="Table" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="310" width="180" height="120" as="geometry" />
+          <mxGeometry x="30" y="350" width="180" height="120" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-34" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-33">
           <mxGeometry y="30" width="180" height="30" as="geometry" />
@@ -105,6 +106,15 @@
           <mxGeometry x="30" width="150" height="30" as="geometry">
             <mxRectangle width="150" height="30" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-49" value="timestamp time window: X days&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="263" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-50" target="fsNMHJ3vaEJQy9d12kHY-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-50" value="table with records to merge" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="400.00142857142856" y="67.78222222222223" width="57.56571428571429" height="71.11111111111111" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
