@@ -1,23 +1,59 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="Page-1" id="UgffWW_VsuH77YorsNkY">
-    <mxGraphModel dx="830" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="988" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-1" value="source table" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="140" width="120" height="60" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="120" width="604.44" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry width="554.07" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-20" value="DBT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry width="57.56571428571429" height="26.666666666666664" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="fsNMHJ3vaEJQy9d12kHY-21" source="fsNMHJ3vaEJQy9d12kHY-15" target="fsNMHJ3vaEJQy9d12kHY-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-15" value="Backfill job" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry x="282.07" y="151.11" width="77.93" height="48.89" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="fsNMHJ3vaEJQy9d12kHY-21" source="fsNMHJ3vaEJQy9d12kHY-17" target="fsNMHJ3vaEJQy9d12kHY-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-17" value="Regular incremental job" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry x="282.072" y="26.666666666666664" width="115.13142857142859" height="53.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-11" value="Job to identify backfilled records at source" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry x="28.782857142857146" y="151.11111111111111" width="115.13142857142859" height="53.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-7" value="table with records to merge" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry x="182.29142857142858" y="142.22222222222223" width="57.56571428571429" height="71.11111111111111" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.568;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="fsNMHJ3vaEJQy9d12kHY-21" source="fsNMHJ3vaEJQy9d12kHY-11" target="fsNMHJ3vaEJQy9d12kHY-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="fsNMHJ3vaEJQy9d12kHY-21" source="fsNMHJ3vaEJQy9d12kHY-15" target="fsNMHJ3vaEJQy9d12kHY-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-24" value="models" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="fsNMHJ3vaEJQy9d12kHY-21">
+          <mxGeometry x="460.52571428571434" y="97.77777777777777" width="115.13142857142859" height="53.33333333333333" as="geometry" />
         </mxCell>
         <mxCell id="fsNMHJ3vaEJQy9d12kHY-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Data reconciliation&amp;nbsp;&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="10" y="10" width="420" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-3" value="table with records to merge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="250" width="120" height="60" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-6" value="&lt;div&gt;dbt run --models model1&amp;nbsp;&lt;font style=&quot;color: rgb(255, 153, 153);&quot;&gt;--vars &#39;{&quot;data_source&quot;: &quot;model&quot;}&#39; /&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 153, 153);&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;--vars &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot; class=&quot;hljs-string&quot;&gt;&#39;{&quot;data_source&quot;: &quot;source&quot;}&#39;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="450" width="500" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-5" value="flag" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="210" width="80" height="80" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-12" value="BigQuery table" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="250" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="fsNMHJ3vaEJQy9d12kHY-6" value="DBT model" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="210" width="120" height="60" as="geometry" />
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.073;entryY=0.518;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-11" target="fsNMHJ3vaEJQy9d12kHY-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsNMHJ3vaEJQy9d12kHY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fsNMHJ3vaEJQy9d12kHY-17" target="fsNMHJ3vaEJQy9d12kHY-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
